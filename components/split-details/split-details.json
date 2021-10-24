@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_split_details_split_details",
+  "info": {
+    "name": "splitDetails",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "strength",
+        "cardio",
+        "mixed"
+      ]
+    },
+    "workouts": {
+      "type": "integer",
+      "max": 20
+    }
+  }
+}

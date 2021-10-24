@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routines",
+  "info": {
+    "name": "Routine",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "exercises": {
+      "collection": "exercise",
+      "via": "routine"
+    }
+  }
+}

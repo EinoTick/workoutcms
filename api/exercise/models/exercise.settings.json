@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "name": "exercise",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 25
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "chest",
+        "shoulders",
+        "back",
+        "legs",
+        "hands"
+      ],
+      "required": false
+    },
+    "demonstration": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    },
+    "routine": {
+      "via": "exercises",
+      "model": "routine"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "splits",
+  "info": {
+    "name": "Split",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "maxLength": 25
+    },
+    "details": {
+      "type": "component",
+      "repeatable": false,
+      "component": "split-details.split-details"
+    }
+  }
+}
